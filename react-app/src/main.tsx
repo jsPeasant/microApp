@@ -9,6 +9,7 @@ let root: any = null
 
 const render = (props: { [x: string]: any; container?: any; }) => {
   const { container } = props;
+  console.log('props', props)
   root = createRoot(container ?
     container.querySelector("#root") :
     document.getElementById('root') as HTMLElement
